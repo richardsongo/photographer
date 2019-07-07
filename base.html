@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nunjucks/3.0.1/nunjucks-slim.min.js"></script>
     
+<script>
 
+  // Precompiling a whole directory
+$ nunjucks-precompile views > templates.js
+
+// Precompiling individual templates
+$ nunjucks-precompile views/base.html >> templates.js
+$ nunjucks-precompile views/index.html >> templates.js
+$ nunjucks-precompile views/about.html >> templates.js
+  
+</script>
+    
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
